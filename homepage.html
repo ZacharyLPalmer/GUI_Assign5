@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--NAME:   Zachary Palmer
+    EMAIL:  zachary_palmer@student.uml.edu 
+    COURSE: 91.61 GUI Programming 1
+    DATE:   10/18/2018
+    PURPOSE:
+    Elaborating on our existing homepage using what we learned
+    with css in the past several weeks
+    FILE(s): 
+    /~zpalmer/assignment4/homepage.html
+    /~zpalmer/assignment4/css/homepagestyle.css
+-->
+<html lang="en">
+<head>
+    <title>
+        Zach Palmer Gooey Homepage
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/homepagestyle.css">
+</head>
+
+<body>
+    <!--Nav bar with links to past assignments and a mail:to link-->
+    <ul>
+        <li><a href="http://www.cs.uml.edu/~zpalmer/assignment4/homepage.html">Homepage</a>
+        </li>
+        <li><a href="http://www.cs.uml.edu/~zpalmer/homepage.html">Assignment 2</a>
+        </li>
+        <li><a href="http://www.cs.uml.edu/~zpalmer/assignment3/index.html">Assignment 3</a>
+        </li>
+        <li><a href="mailto:contact@zachary-palmer.com">Contact</a>
+        </li>
+    </ul>
+
+    <!--overall content wrapper-->
+    <div id="wrapper">
+        <header>
+            <!--Following is the header text for my page centered in the middle top of my page for
+                                        readibility. Utilizing two different header text sizes.
+                                    -->
+                                    
+            <div class="headerText">
+                <h1>Zachary Palmer's Webpage</h1>
+                <h3>Graphical User Interface Programming 1</h3>
+            </div>
+
+        </header>
+ 
+        <div class="textBody">
+            <!--Following is where the text is as well as some included pictures of my cars and a fancy table of my classes
+                    -->
+            <figure id="f1">
+                <img id="avatar" src="Headshot.jpg" alt="Avatar">
+                <figcaption>This is me!</figcaption>
+            </figure>
+
+            <h3>Welcome to my homepage for Graphical User Interface 1!</h3>
+
+            <p>
+                My name is Zachary Palmer and I am a
+                senior computer science student
+                here at UMASS Lowell.
+            </p>
+
+            <p>On this page you will find some background information on myself as well as some
+                analysis of my time here at University of Massachussets Lowell.
+                This is my fantastic homepage created for assignment 2 of GUI 1!
+            </p>
+
+            <h2>A little about myself</h2>
+
+            <p>I have a passion for coding, cars, and coffee. Over the course of my college career I have owned
+                a two different 2016 mustangs; all bought and paid for by working through college.
+            </p>
+
+            <figure class="f2">
+                <img class="car" src="car2.jpg" alt="car2">
+                <figcaption>My original mustang - a ecoboost automatic</figcaption>
+            </figure>
+
+            <figure class="f2">
+                <img class="car" src="car.jpg" alt="car">
+                <figcaption>My current car - a beautiful stick shift Mustang GT</figcaption>
+            </figure>
+
+            <h2>A little about my time here at UML</h2>
+
+            <p>I transferred into UML from a small private univeristy in South Carolina called Bob Jones Univerisity
+                after my freshman year.
+            </p>
+
+            <p>The table below lists the computer science classes I have taken so far, when I took them and the
+                accompanying grade I received.
+                It is clearly evident that after I adjusted during my first two semesters my grades improved
+                significantly.
+            </p>
+            <table id="classes">
+                <tr>
+                    <th>Class Name</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Computing 2</td>
+                    <td>Fall '16</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Computing 3</td>
+                    <td>Spring '17</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>Assembly Language Programming </td>
+                    <td>Spring '17</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>Computing 4</td>
+                    <td>Fall '17</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Organization of Programming Languages</td>
+                    <td>Spring '18</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Foundations of Computer Science</td>
+                    <td>Spring '18</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Computer Architecture</td>
+                    <td>Spring '18</td>
+                    <td>A</td>
+                </tr>
+            </table>
+            <p>
+        <!--Css validation icon        -->
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

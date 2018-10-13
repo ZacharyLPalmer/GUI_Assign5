@@ -1,0 +1,142 @@
+/*  NAME:   Zachary Palmer
+    EMAIL:  zachary_palmer@student.uml.edu 
+    COURSE: 91.61 GUI Programming 1
+    DATE:   10/18/2018
+    PURPOSE:
+    Elaborating on our existing homepage using what we learned
+    with css in the past several weeks
+    FILE(s): 
+    /~zpalmer/assignment4/homepage.html
+    /~zpalmer/assignment4/css/homepagestyle.css
+*/
+
+/*css description for the background picture and the font used 
+thoughout the webpage*/
+body {
+    background-color: #333;
+    background-position: top center;
+    font-family: 'Courier New', Courier, monospace
+}
+
+/*css for the nav bar which stays in place as page scrolls*/
+ul{
+    margin-right: 15%;
+	margin-left: 15%;
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index:9; 
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+
+/*css for the overall wrapper on everything on the page except the nav*/
+#wrapper {
+	display: grid;
+	position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #9c9c9c;
+}
+
+/*css description for centering the header text and setting the padding*/
+div.headerText {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*css description for the main text body window, sets color of background and 
+opacity with a black border and padding*/
+div.textBody {
+    margin-right: 15%;
+	margin-left: 15%;
+}
+
+/*sets text size weight and color for text in the body*/
+div.textBody p {
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}
+
+div.textBody li {
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}
+
+/*rounds the avater od my in the corner and sets padding values*/
+#avatar {
+    padding: 15px;
+    border-radius: 50%;
+    width: 100px;
+    opacity: 1;
+}
+
+/*adjusts image properites for the car pictures*/
+.car {
+    width: 70%;
+    padding-top: 20px;
+}
+
+#f1 {
+    float: right;
+    text-align: center;
+}
+
+.f2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    text-align: center;
+    background-color: rgb(94, 94, 94);
+}
+
+.f2 figcaption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* css for styling the fancy classes list table*/
+#classes {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;  
+    margin-bottom: 40px;
+}
+
+#classes td, #classes th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#classes tr:nth-child(even){background-color: #686868;}
+#classes tr:nth-child(odd){background-color: #868686;}
+#classes tr:hover {background-color: rgb(211, 115, 115);}
+
+#classes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(126, 39, 39);
+    color: white;
+}
